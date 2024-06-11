@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Company - Recursos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para o rodapé oculto */
+        #footer {
+            position: fixed;
+            bottom: -100px; /* Define a posição inicial fora da tela */
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            transition: bottom 0.3s ease; /* Adiciona uma transição suave */
+            z-index: 9999; /* Garante que o rodapé esteja acima de outros elementos */
+        }
+
+        #show-footer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10000; /* Garante que o botão esteja acima do rodapé */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banana Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="features.html">Recursos</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="reviews.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="features">
+            <h2>Recursos</h2>
+            <ul>
+                <li>Formato ergonômico</li>
+                <li>Bateria de longa duração</li>
+                <li>Câmera de alta resolução</li>
+                <li>Tela OLED de 6.7 polegadas</li>
+                <li>Processador B15 Bionic</li>
+            </ul>
+            <section id="camera-features">
+                <h3>Funcionalidade de Três Câmeras</h3>
+                <p>O Banana Phone está equipado com um sistema de câmera tripla de última geração que redefine a fotografia móvel. Aqui estão as funcionalidades das três câmeras:</p>
+                <ul>
+                    <li><strong>Câmera Principal:</strong> A câmera principal de 108MP captura fotos incrivelmente detalhadas em qualquer condição de iluminação, graças à sua tecnologia avançada de sensores e grande abertura. Seja um dia ensolarado ou um ambiente com pouca luz, suas fotos sempre parecerão nítidas e vibrantes.</li>
+                    <li><strong>Câmera Ultra-Wide:</strong> A câmera ultra-wide de 12MP permite que você capture mais em seu quadro. Perfeita para fotos de paisagens, grupos e arquitetura, esta câmera captura um campo de visão de 120 graus, garantindo que você não perca nenhum detalhe nas bordas.</li>
+                    <li><strong>Câmera Telefoto:</strong> A câmera telefoto de 8MP oferece zoom óptico de 5x e até 50x zoom digital, aproximando os assuntos distantes sem perder clareza. Ideal para fotografia de vida selvagem, eventos esportivos e qualquer cenário em que você precise se aproximar da ação sem se mover.</li>
+                </ul>
+                <p>Com essas três câmeras poderosas, o Banana Phone garante que você esteja sempre pronto para capturar a foto perfeita, independentemente da situação.</p>
+            </section>
+            <section id="battery-features">
+                <h3>Bateria de Longa Duração</h3>
+                <p>O Banana Phone vem com uma bateria excepcionalmente duradoura que garante que você fique conectado ao longo do dia sem a necessidade de recargas frequentes. Aqui estão as principais características da bateria:</p>
+                <ul>
+                    <li><strong>Tempo de Uso Prolongado:</strong> Com até 48 horas de uso com uma única carga, o Banana Phone acompanha seu estilo de vida agitado, seja para fazer chamadas, navegar na web ou usar aplicativos.</li>
+                    <li><strong>Carregamento Rápido:</strong> Equipado com tecnologia de carregamento rápido, o Banana Phone pode ser carregado até 50% em apenas 30 minutos, para que você possa voltar rapidamente às suas atividades.</li>
+                    <li><strong>Eficiência Energética:</strong> Recursos avançados de gerenciamento de energia otimizam a vida útil da bateria, reduzindo o consumo de energia durante os períodos ociosos, garantindo máxima eficiência sem comprometer o desempenho.</li>
+                    <li><strong>Vida Útil Durável:</strong> A bateria de alta capacidade mantém seu desempenho ao longo do tempo, proporcionando energia confiável por anos de uso.</li>
+                </ul>
+                <p>Seja em uma longa viagem, um dia de trabalho ocupado ou uma aventura de fim de semana, a bateria de longa duração do Banana Phone garante que você esteja sempre com energia e pronto para ir.</p>
+            </section>
+            <section id="screen-features">
+                <h3>Tela OLED de 6.7 Polegadas</h3>
+                <p>A tela OLED de 6.7 polegadas do Banana Phone oferece uma experiência visual deslumbrante. Com cores vibrantes, pretos profundos e alto contraste, cada imagem ganha vida, proporcionando uma imersão total em seus filmes, jogos e aplicativos favoritos.</p>
+                <p>Além disso, a tecnologia OLED permite que o Banana Phone tenha uma tela mais fina e leve, sem sacrificar a qualidade da imagem. Seja navegando na web, assistindo vídeos ou visualizando fotos, a tela OLED de 6.7 polegadas oferece uma experiência excepcional em cada interação.</p>
+            </section>
+            <section id="processor-features">
+                <h3>Processador B15 Bionic</h3>
+                <p>O Banana Phone é alimentado pelo avançado processador B15 Bionic, projetado para oferecer desempenho excepcional e eficiência energética. Aqui estão algumas características do processador:</p>
+                <ul>
+                    <li><strong>Desempenho Avançado:</strong> Com núcleos de alto desempenho e arquitetura avançada, o processador B15 Bionic oferece uma experiência de usuário suave e responsiva, seja executando aplicativos exigentes, jogos intensivos ou multitarefa.</li>
+                    <li><strong>Inteligência Artificial Integrada:</strong> A inteligência artificial integrada otimiza o desempenho do dispositivo, aprendendo com o uso para oferecer uma experiência personalizada e eficiente.</li>
+                    <li><strong>Eficiência Energética:</strong> O design eficiente do processador B15 Bionic maximiza a vida útil da bateria, permitindo um uso prolongado sem comprometer o desempenho. Isso significa que você pode desfrutar de todas as funcionalidades do Banana Phone por mais tempo, sem se preocupar com a duração da bateria.</li>
+                    <li><strong>Gráficos Imersivos:</strong> Com uma poderosa unidade de processamento gráfico (GPU), o processador B15 Bionic oferece gráficos impressionantes e uma experiência visual imersiva para jogos, vídeos e aplicativos.</li>
+                </ul>
+                <p>Com o processador B15 Bionic, o Banana Phone oferece um desempenho excepcional em um pacote eficiente e confiável, garantindo que você possa fazer mais e aproveitar ao máximo seu dispositivo móvel.</p>
+            </section>
+        </section>
+    </main>
+    <!-- Botão para mostrar o rodapé -->
+    <button id="show-footer">&#x21AA;</button>
+    <!-- Rodapé oculto -->
+    <footer id="footer">
+        <p>&copy; 2024 Banana Company</p>
+    </footer>
+    <script>
+        // JavaScript para mostrar e ocultar o rodapé
+        const footer = document.getElementById('footer');
+        const showFooterBtn = document.getElementById('show-footer');
+
+        showFooterBtn.addEventListener('click', () => {
+            const footerStyle = window.getComputedStyle(footer);
+            const footerBottom = parseFloat(footerStyle.bottom);
+
+            if (footerBottom < 0) {
+                footer.style.bottom = '0';
+            } else {
+                footer.style.bottom = '-100px';
+            }
+        });
+    </script>
+</body>
+</html>

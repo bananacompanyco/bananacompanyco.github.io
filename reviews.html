@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Company - Avaliações</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para o rodapé oculto */
+        #footer {
+            position: fixed;
+            bottom: -100px; /* Define a posição inicial fora da tela */
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            transition: bottom 0.3s ease; /* Adiciona uma transição suave */
+            z-index: 9999; /* Garante que o rodapé esteja acima de outros elementos */
+        }
+
+        #show-footer {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10000; /* Garante que o botão esteja acima do rodapé */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banana Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="features.html">Recursos</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="reviews.html">Avaliações</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reviews">
+            <h2>Avaliações</h2>
+            <article>
+                <h3>João Silva</h3>
+                <p>"O Banana Phone é incrível! A qualidade da câmera é excepcional e a bateria dura muito tempo. Recomendo a todos!"</p>
+            </article>
+            <article>
+                <h3>Maria Oliveira</h3>
+                <p>"Adorei o design ergonômico do Banana Phone. Além disso, o carregamento rápido é realmente útil para o meu dia a dia."</p>
+            </article>
+            <article>
+                <h3>Carlos Pereira</h3>
+                <p>"A melhor compra que fiz este ano. As funcionalidades da câmera são perfeitas para minhas necessidades de fotografia. E a bateria é fantástica!"</p>
+            </article>
+        </section>
+    </main>
+    <!-- Botão para mostrar o rodapé -->
+    <button id="show-footer">&#x21AA;</button>
+    <!-- Rodapé oculto -->
+    <footer id="footer">
+        <p>&copy; 2024 Banana Company</p>
+    </footer>
+    <script>
+        // JavaScript para mostrar e ocultar o rodapé
+        const footer = document.getElementById('footer');
+        const showFooterBtn = document.getElementById('show-footer');
+
+        showFooterBtn.addEventListener('click', () => {
+            const footerStyle = window.getComputedStyle(footer);
+            const footerBottom = parseFloat(footerStyle.bottom);
+
+            if (footerBottom < 0) {
+                footer.style.bottom = '0';
+            } else {
+                footer.style.bottom = '-100px';
+            }
+        });
+    </script>
+</body>
+</html>
